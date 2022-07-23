@@ -26,7 +26,7 @@
             </a>
             <ul id="mainnav" class="menu">
                 <li><a href="index.php">Home</a></li>
-                <li><a href="ghazal_shayari.php">Ghazal</a></li>
+                <li><a href="maa_shayari.php">Maa Shayari</a></li>
                 <li><a href="love_shayari.php">Hindi Love Shayari</a></li>
                 <li><a href="deshbhakti_shayari.php">Deshbhakti Shayari</a></li>
                 <li><a href="sad_shayari.php">Sad Shayari</a></li>
