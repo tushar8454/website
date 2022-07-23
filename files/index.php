@@ -46,19 +46,7 @@ require_once "dbhome.php";
         .option {
             text-align: center;
         }
-.new-button {
-  padding: 15px 25px;
-  font-size: 18px;
-  text-align: center;
-  cursor: pointer;
-  outline: none;
-  color: #fff;
-  background-color: #333;
-  border: none;
-  border-radius: 10px;
-  box-shadow: 0 5px #999;
 
-}
 
 .new-button:hover {background: #f90;
         color: #fff;}
