@@ -6,6 +6,7 @@ require_once "dbhome.php";
 <html lang="en-IN">
 
 <head>
+<?php include "./header.html" ?> 
 <link rel="stylesheet" href="website.css">
 
 <meta name="google-site-verification" content="K_9h4nIm1HVM2IMFM3KihWeLEym_D0RuGEL0OSAQoC0" />
