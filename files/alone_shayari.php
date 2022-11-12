@@ -36,6 +36,7 @@
 
    <!-- upper navbar -->
 
+  
    <?php include 'navbar.php'; ?>
 
 
@@ -43,7 +44,7 @@
             <div class="sc-main">
                 <div class="bradcrum">
                     <ol>
-                        <li><a href="index.php">Home</a></li>
+                        <li><a href="https://shayariindustry.com/index.php">Home</a></li>
                         
                     </ol>
                 </div>
@@ -74,7 +75,7 @@ WHERE category = 'alone shayari'";
 $result=mysqli_query($con,$sql);
 $count=mysqli_num_rows($result);
 // echo $count;
-$per_page=4;
+$per_page=8;
 $pages=ceil($count/$per_page);
 $offset=($page_no-1)*$per_page;
 $sql="SELECT discription,category  FROM shayari
@@ -157,7 +158,7 @@ $end=($page_no + 4);
 
   if($page_no>=2){
 
-    echo '<a href="alone_shayari.php?page='.($page_no-1).'" class="prev">Prev</a>';
+    echo '<a href="https://shayariindustry.com/alone_shayari.php?page='.($page_no-1).'" class="prev">Prev</a>';
     
 
   }
@@ -173,7 +174,7 @@ $end=($page_no + 4);
       }
 
        echo'
-       <a href="alone_shayari.php?page='.$i.'"<li class=" '.$current.' ">'.$i.'</li></a>
+       <a href="https://shayariindustry.com/alone_shayari.php?page='.$i.'"<li class=" '.$current.' ">'.$i.'</li></a>
 
        ';}
 
@@ -183,7 +184,7 @@ $end=($page_no + 4);
         
 
 
-        echo '<a href="alone_shayari.php?page='.($page_no+1).'" class="next">Next</a>';
+        echo '<a href="https://shayariindustry.com/alone_shayari.php?page='.($page_no+1).'" class="next">Next</a>';
 
 
         

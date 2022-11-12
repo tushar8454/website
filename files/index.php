@@ -58,41 +58,41 @@ require_once "dbhome.php";
 
 
         
-        <div class="site-content clearfix">
-            <div class="sc-main">
-                <div class="bradcrum">
-                    <ol>
-                        <li><a href="index.php">Home</a></li>
-                        
-                    </ol>
-                </div>
-                <div class="posts">
-                    <h1>Best  Shayari</h1>
-                    <div class="">
-                       
-                    </div>
-                    <p>Welcome to Shayari Industry(shayariindustry.com) . Sometimes poetry(shayari)is the best companion and it can heal every wound .This is the perfect place for every emotion a human can have . Here, you'll get every type of shayari  sad,happy ,alone ,long shayari and short shayari ,etc . So ,why wait go and click on the category on the basis of your feeling and emotion .We hope you like our content . Suggestions are always open ,you can mail us .Thank you ❤️❤️
-                    </p>
-                </div>
+<div class="site-content clearfix">
+    <div class="sc-main">
+        <div class="bradcrum">
+            <ol>
+                <li><a href="https://shayariindustry.com/index.php">Home</a></li>
+                
+            </ol>
+        </div>
+        <div class="posts">
+            <h1>Best  Shayari</h1>
+            <div class="">
+               
+            </div>
+            <p>Welcome to Shayari Industry(shayariindustry.com) . Sometimes poetry(shayari)is the best companion and it can heal every wound .This is the perfect place for every emotion a human can have . Here, you'll get every type of shayari  sad,happy ,alone ,long shayari and short shayari ,etc . So ,why wait go and click on the category on the basis of your feeling and emotion .We hope you like our content . Suggestions are always open ,you can mail us .Thank you ❤️❤️
+            </p>
+        </div>
 
 
-                <!-- post -->
+        <!-- post -->
 <?php
 
 require_once "dbhome.php";
 
 if(isset($_GET['page'])){
-    $page_no=$_GET['page'];
-    $page_no=htmlentities($page_no);
+$page_no=$_GET['page'];
+$page_no=htmlentities($page_no);
 }
 else{
-    $page_no=1;
+$page_no=1;
 }
 
 $sql="SELECT *FROM shayari";
 $result=mysqli_query($con,$sql);
 $count=mysqli_num_rows($result);
-$per_page=5;
+$per_page=8;
 $pages=ceil($count/$per_page);
 $offset=($page_no-1)*$per_page;
 $sql="SELECT *FROM shayari LIMIT $offset,$per_page";
@@ -106,33 +106,33 @@ if(mysqli_num_rows($result)){
 }
 
 else{
-    header("location:pagen.php");
+header("location:pagen.php");
 }
 
 
 while($row=mysqli_fetch_assoc($result)){
+
+
+$title=$row['discription'];
+$discription=$row['discription'];
+$str = mb_substr($title, 0, 26,'utf-8');
+$category=$row['category'];
+
+      echo'  <div class="posts ">
+            <h2>'.$str.' ...</h2>
+            <p>'.$discription.'</p> 
+
+            <p class="post-meta" ><h>'. $category.'</h</p>
+
+           <br />
+            <hr>
+        
+
+        </div>';
+
+        
+        
     
-   
-    $title=$row['discription'];
-    $discription=$row['discription'];
-    $str = mb_substr($title, 0, 26,'utf-8');
-    $category=$row['category'];
-
-              echo'  <div class="posts ">
-                    <h2>'.$str.' ...</h2>
-                    <p>'.$discription.'</p> 
-
-                    <p class="post-meta" ><h>'. $category.'</h</p>
-	
-                   <br />
-                    <hr>
-                
-
-                </div>';
-
-                
-                
-            
 }
 
 
@@ -146,66 +146,66 @@ while($row=mysqli_fetch_assoc($result)){
 
 
 
-                <div class="pagination clearfix">
+        <div class="pagination clearfix">
 
-           <?php
+   <?php
 
 $start=($page_no-4);
 switch($start){
-    case 0:
-        $start=1;
-    case -1:
-        $start=1;
-    case -2:
-        $start=1;
-    case -3:
-        $start=1;
+case 0:
+$start=1;
+case -1:
+$start=1;
+case -2:
+$start=1;
+case -3:
+$start=1;
 };
 
 
 $end=($page_no + 4);
-  if($end>$pages){
-      $end=$pages;
-  }
+if($end>$pages){
+$end=$pages;
+}
 
-  if($page_no>=2){
+if($page_no>=2){
 
-    echo '<a href="index.php?page='.($page_no-1).'" class="prev">Prev</a>';
-    
-
-  }
-
-  
-  for($i=$start;$i<=$end;$i++){
-      if($i==$page_no){
-          $current="current";
-      }
-      else{
-          $current="";
-      }
-
-       echo'
-       <a href="index.php?page='.$i.'"<li class=" '.$current.' ">'.$i.'</li></a>
-
-       ';}
+echo '<a href="https://shayariindustry.com/index.php?page='.($page_no-1).'" class="prev">Prev</a>';
 
 
-       if($page_no < $pages){
-
-       
-
-        echo '<a href="index.php?page='.($page_no+1).'" class="next">Next</a>';
+}
 
 
-        
-    }
+for($i=$start;$i<=$end;$i++){
+if($i==$page_no){
+  $current="current";
+}
+else{
+  $current="";
+}
 
-   if($pages>1){
-   
+echo'
+<a href="https://shayariindustry.com/index.php?page='.$i.'"<li class=" '.$current.' ">'.$i.'</li></a>
 
-       echo '<span class="gap">&nbsp;&nbsp;</span>';
-   }
-  
+';}
+
+
+if($page_no < $pages){
+
+
+
+echo '<a href="https://shayariindustry.com/index.php?page='.($page_no+1).'" class="next">Next</a>';
+
+
+
+}
+
+if($pages>1){
+
+
+echo '<span class="gap">&nbsp;&nbsp;</span>';
+}
+
 
 
 
@@ -216,13 +216,13 @@ $end=($page_no + 4);
 
 
 ?>
-                </div>
-            </div>
+        </div>
+    </div>
 
 
 
-              <!-- footer link -->
-              <?php include 'homefooter.php'; ?>
+      <!-- footer link -->
+      <?php include 'homefooter.php'; ?>
 
 </div>
 
@@ -236,4 +236,3 @@ $end=($page_no + 4);
 </body>
 
 </html>
-

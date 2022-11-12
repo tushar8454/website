@@ -5,56 +5,55 @@
                 </div>
                 <div class="sb-box sb-cate">
                     <ul class="clearfix">
-                        <li><a href="alone_shayari.php">Alone Shayari</a></li>
+                        <li><a href="https://shayariindustry.com/alone_shayari.php">Alone Shayari</a></li>
                         
-                        <li><a href="attitude_shayari.php">Attitude Shayari</a></li>
+                        <li><a href="https://shayariindustry.com/attitude_shayari.php">Attitude Shayari</a></li>
 
                         
-                        <li><a href="bewafa_shayari.php">Bewafa Shayari</a></li>
+                        <li><a href="https://shayariindustry.com/bewafa_shayari.php">Bewafa Shayari</a></li>
                         
-                        <li><a href="broken_shayari.php">Broken Heart Shayari</a></li>
+                        <li><a href="https://shayariindustry.com/broken_shayari.php">Broken Heart Shayari</a></li>
 
                         
-                        <li><a href="comedy_shayari.php">Comedy Shayari</a></li>
+                        <li><a href="https://shayariindustry.com/comedy_shayari.php">Comedy Shayari</a></li>
                         
-                        <li><a href="deshbhakti_shayari.php">Deshbhakti Shayari</a></li>
+                        <li><a href="https://shayariindustry.com/deshbhakti_shayari.php">Deshbhakti Shayari</a></li>
 
-                        <li><a href="dil_shayari.php">Dil Shayari</a></li>
+                        <li><a href="https://shayariindustry.com/dil_shayari.php">Dil Shayari</a></li>
 
                        
-                        <li><a href="friendship_shayari.php">Friendship Shayari</a></li>
+                        <li><a href="https://shayariindustry.com/friendship_shayari.php">Friendship Shayari</a></li>
                     
 
-                        <li><a href="ilzam_shayari.php">ilzaam Shayari</a></li>
+                        <li><a href="https://shayariindustry.com/ilzam_shayari.php">ilzaam Shayari</a></li>
 
-                        <li><a href="inspirational_shayari.php">Inspirational Shayari</a>
+                        <li><a href="https://shayariindustry.com/inspirational_shayari.php">Inspirational Shayari</a>
                         </li>
 
-                        <li><a href="intezar_shayari.php">Intezaar Shayari</a></li>
+                        <li><a href="https://shayariindustry.com/intezar_shayari.php">Intezaar Shayari</a></li>
 
                         
                        
                      
-                        <li><a href="love_shayari.php">Love Shayari</a></li>
+                        <li><a href="https://shayariindustry.com/love_shayari.php">Love Shayari</a></li>
 
-                        <li><a href="maa_shayari.php">Maa Shayari</a></li>
+                        <li><a href="https://shayariindustry.com/maa_shayari.php">Maa Shayari</a></li>
 
                         
                         
-                        <li><a href="sad_shayari.php">Painful Shayari</a></li>
+                      
+                        
 
-                        <li><a href="love_shayari.php">Romantic Shayari</a></li>
-
-                        <li><a href="sad_shayari.php">Sad Shayari</a></li>
+                        <li><a href="https://shayariindustry.com/sad_shayari.php">Sad Shayari</a></li>
 
 
                         
             
-                        <li><a href="inspirational_shayari.php">Shayari On Life</a></li>
+                        <li><a href="https://shayariindustry.com/inspirational_shayari.php">Shayari On Life</a></li>
 
                         
                         
-                        <li><a href="twoline_shayari.php">Two Line Shayari</a></li>
+                        <li><a href="https://shayariindustry.com/twoline_shayari.php">Two Line Shayari</a></li>
 
                     </ul>
                 </div>
@@ -82,26 +81,27 @@
             <div class="foot-row-1">
                 <h3>Popular Tags</h3>
                 <ul class="clearfix">
-                    <li><a href="attitude_shayari.php">Attitude Shayari</a></li>
-                    <li><a href="bewafa_shayari.php">Bewafa Shayari</a></li>
-                    <li><a href="comedy_shayari.php">Comedy Shayari</a></li>
-                    <li><a href="dil_shayari.php">Dil Shayari</a></li>
-                    <li><a href="deshbhakti_shayari.php">Deshbhakti-Shayari</a></li>
+                <li><a href="https://shayariindustry.com/alone_shayari.php">Alone Shayari</a></li>
+                    <li><a href="https://shayariindustry.com/attitude_shayari.php">Attitude Shayari</a></li>
+                    <li><a href="https://shayariindustry.com/bewafa_shayari.php">Bewafa Shayari</a></li>
+                    <li><a href="https://shayariindustry.com/comedy_shayari.php">Comedy Shayari</a></li>
+                    <li><a href="https://shayariindustry.com/dil_shayari.php">Dil Shayari</a></li>
+                    <li><a href="https://shayariindustry.com/deshbhakti_shayari.php">Deshbhakti-Shayari</a></li>
 
-                    <li><a href="inspirational_shayari.php">Inspirational Shayari</a></li>
+                    <li><a href="https://shayariindustry.com/inspirational_shayari.php">Inspirational Shayari</a></li>
 
-                    <li><a href="intezar_shayari.php">Intezaar Shayari</a></li>
+                    <li><a href="https://shayariindustry.com/intezar_shayari.php">Intezaar Shayari</a></li>
 
-                    <li><a href="love_shayari.php">Love Shayari</a></li>
+                    <li><a href="https://shayariindustry.com/love_shayari.php">Love Shayari</a></li>
 
-                    <li><a href="maa_shayari.php">Maa Shayari</a></li>
+                    <li><a href="https://shayariindustry.com/maa_shayari.php">Maa Shayari</a></li>
 
                    
-                    <li><a href="alone_shayari.php">Alone Shayari</a></li>
+                  
 
-                    <li><a href="sad_shayari.php">Sad Shayari</a></li>
+                    <li><a href="https://shayariindustry.com/sad_shayari.php">Sad Shayari</a></li>
 
-                    <li><a href="twoline_shayari.php">Two Line Shayari</a></li>
+                    <li><a href="https://shayariindustry.com/twoline_shayari.php">Two Line Shayari</a></li>
                 </ul>
             </div>
 
@@ -120,8 +120,8 @@
 
             <div class="foot-row-3">
                 &copy; 2022 <a href="https://www.shayariindustry.com/">Shayariindustry.com</a> <a
-                    href="contact_us.php">Contact us</a> <a
-                    href="privacypolicy.php">Privacy Policy</a>
+                    href="https://shayariindustry.com/contact_us.php">Contact us</a> <a
+                    href="https://shayariindustry.com/privacypolicy.php">Privacy Policy</a>
             </div>
 
 
@@ -150,11 +150,3 @@
         
 
    <!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-W151Q2XFF9"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-W151Q2XFF9');
-</script>

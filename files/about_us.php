@@ -937,7 +937,7 @@
             <div class="sc-main">
                 <div class="bradcrum">
                     <ol>
-                        <li><a href="index.php">Home</a></li>
+                    <li><a href="https://shayariindustry.com/index.php">Home</a></li>
                         
                     </ol>
                 </div>

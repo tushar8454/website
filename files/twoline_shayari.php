@@ -36,6 +36,7 @@
 
    <!-- upper navbar -->
 
+   
    <?php include 'navbar.php'; ?>
 
 
@@ -43,7 +44,7 @@
             <div class="sc-main">
                 <div class="bradcrum">
                     <ol>
-                        <li><a href="index.php">Home</a></li>
+                        <li><a href="https://shayariindustry.com/index.php">Home</a></li>
                         
                     </ol>
                 </div>
@@ -74,11 +75,11 @@ WHERE category = 'two line shayari'";
 $result=mysqli_query($con,$sql);
 $count=mysqli_num_rows($result);
 // echo $count;
-$per_page=6;
+$per_page=7;
 $pages=ceil($count/$per_page);
 $offset=($page_no-1)*$per_page;
 $sql="SELECT discription,category  FROM shayari
-WHERE category = 'two line shayari' LIMIT $offset,$per_page";
+WHERE category = 'two line shayari' LIMIT $offset,$count";
 $result=mysqli_query($con,$sql);
 mysqli_set_charset($con,'utf8');
 mysqli_query($con,"SET character_set_results = 'utf8', character_set_client = 'utf8', character_set_connection = 'utf8', character_set_database = 'utf8', character_set_server = 'utf8'");
@@ -157,7 +158,7 @@ $end=($page_no + 4);
 
   if($page_no>=2){
 
-    echo '<a href="twoline_shayari.php?page='.($page_no-1).'" class="prev">Prev</a>';
+    echo '<a href="https://shayariindustry.com/twoline_shayari.php?page='.($page_no-1).'" class="prev">Prev</a>';
     
 
   }
@@ -173,7 +174,7 @@ $end=($page_no + 4);
       }
 
        echo'
-       <a href="twoline_shayari.php?page='.$i.'"<li class=" '.$current.' ">'.$i.'</li></a>
+       <a href="ttps://shayariindustry.com/twoline_shayari.php?page='.$i.'"<li class=" '.$current.' ">'.$i.'</li></a>
 
        ';}
 
@@ -183,7 +184,7 @@ $end=($page_no + 4);
         
 
 
-        echo '<a href="twoline_shayari.php?page='.($page_no+1).'" class="next">Next</a>';
+        echo '<a href="ttps://shayariindustry.com/twoline_shayari.php?page='.($page_no+1).'" class="next">Next</a>';
 
 
         

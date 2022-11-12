@@ -38,38 +38,37 @@
 <body>
 
    <!-- upper navbar -->
-
    <?php include 'navbar.php'; ?>
 
 
-        <div class="site-content clearfix">
-            <div class="sc-main">
-                <div class="bradcrum">
-                    <ol>
-                        <li><a href="index.php">Home</a></li>
-                        
-                    </ol>
-                </div>
-                <div class="posts">
-                    <h1>Dil shayari</h1>
-                    <div class="">
-                       
-                    </div>
-                   
-                </div>
+<div class="site-content clearfix">
+    <div class="sc-main">
+        <div class="bradcrum">
+            <ol>
+                <li><a href="https://shayariindustry.com/index.php">Home</a></li>
+                
+            </ol>
+        </div>
+        <div class="posts">
+            <h1>Dil shayari</h1>
+            <div class="">
+               
+            </div>
+           
+        </div>
 
 
-                <!-- post -->
+        <!-- post -->
 <?php
 
 require_once "dbhome.php";
 
 if(isset($_GET['page'])){
-    $page_no=$_GET['page'];
-    $page_no=htmlentities($page_no);
+$page_no=$_GET['page'];
+$page_no=htmlentities($page_no);
 }
 else{
-    $page_no=1;
+$page_no=1;
 }
 
 $sql="SELECT discription,category  FROM shayari
@@ -77,7 +76,7 @@ WHERE category = 'sad shayari'";
 $result=mysqli_query($con,$sql);
 $count=mysqli_num_rows($result);
 // echo $count;
-$per_page=4;
+$per_page=8;
 $pages=ceil($count/$per_page);
 $offset=($page_no-1)*$per_page;
 $sql="SELECT *FROM shayari WHERE category= 'sad shayari' ORDER BY RAND() LIMIT $offset,$per_page";
@@ -91,32 +90,32 @@ if(mysqli_num_rows($result)){
 }
 
 else{
-    header("location:dil_shayari.php");
+header("location:dil_shayari.php");
 }
 
 
 while($row=mysqli_fetch_assoc($result)){
 
-    $title=$row['discription'];
-    $discription=$row['discription'];
-    $str = mb_substr($title, 0, 26,'utf-8');
-    $category=$row['category'];
+$title=$row['discription'];
+$discription=$row['discription'];
+$str = mb_substr($title, 0, 26,'utf-8');
+$category=$row['category'];
+
+
+
+echo'  <div class="posts ">
+            <h2>'.$str.' ...</h2>
+            <p>'.$discription.'</p> 
+
+            <p class="post-meta" ><h>dil shayari</h</p>
+
+           <br />
+            <hr>
+        
+
+        </div>';
 
     
-
-    echo'  <div class="posts ">
-                    <h2>'.$str.' ...</h2>
-                    <p>'.$discription.'</p> 
-
-                    <p class="post-meta" ><h>dil shayari</h</p>
-	
-                   <br />
-                    <hr>
-                
-
-                </div>';
-
-            
 }
 
 
@@ -130,73 +129,73 @@ while($row=mysqli_fetch_assoc($result)){
 
 
 
-                <div class="pagination clearfix">
+        <div class="pagination clearfix">
 
-           <?php
+   <?php
 
 
 
-  
+
 
 
 $start=($page_no-4);
 switch($start){
-    case 0:
-        $start=1;
-    case -1:
-        $start=1;
-    case -2:
-        $start=1;
-    case -3:
-        $start=1;
+case 0:
+$start=1;
+case -1:
+$start=1;
+case -2:
+$start=1;
+case -3:
+$start=1;
 };
 
 
 $end=($page_no + 4);
-  if($end>$pages){
-      $end=$pages;
-  }
+if($end>$pages){
+$end=$pages;
+}
 
-  if($page_no>=2){
+if($page_no>=2){
 
-    echo '<a href="dil_shayari.php?page='.($page_no-1).'" class="prev">Prev</a>';
-    
-
-  }
+echo '<a href="https://shayariindustry.com/dil_shayari.php?page='.($page_no-1).'" class="prev">Prev</a>';
 
 
-  
-  for($i=$start;$i<=$end;$i++){
-      if($i==$page_no){
-          $current="current";
-      }
-      else{
-          $current="";
-      }
-
-       echo'
-       <a href="dil_shayari.php?page='.$i.'"<li class=" '.$current.' ">'.$i.'</li></a>
-
-       ';}
+}
 
 
-       if($page_no < $pages){
 
-        
+for($i=$start;$i<=$end;$i++){
+if($i==$page_no){
+  $current="current";
+}
+else{
+  $current="";
+}
+
+echo'
+<a href="https://shayariindustry.com/dil_shayari.php?page='.$i.'"<li class=" '.$current.' ">'.$i.'</li></a>
+
+';}
 
 
-        echo '<a href="dil_shayari.php?page='.($page_no+1).'" class="next">Next</a>';
+if($page_no < $pages){
 
 
-        
-    }
 
-   if($pages>1){
-    
 
-       echo '<span class="gap">&nbsp;&nbsp;</span>';
-   }
-  
+echo '<a href="https://shayariindustry.com/dil_shayari.php?page='.($page_no+1).'" class="next">Next</a>';
+
+
+
+}
+
+if($pages>1){
+
+
+echo '<span class="gap">&nbsp;&nbsp;</span>';
+}
+
 
 
 
@@ -207,13 +206,13 @@ $end=($page_no + 4);
 
 
 ?>
-                </div>
-            </div>
+        </div>
+    </div>
 
 
 
-              <!-- footer link -->
-              <?php include 'homefooter.php'; ?>
+      <!-- footer link -->
+      <?php include 'homefooter.php'; ?>
 
 </div>
 
