@@ -51,7 +51,7 @@ $rowcount=mysqli_query($con,$rows);
 $count=mysqli_num_rows($rowcount);
 // echo $count;
 
-if($count==500){
+if($count>=400){
   
     $deletequery="DELETE FROM `contact_us` WHERE 500";
     $delete=mysqli_query($con,$deletequery);
