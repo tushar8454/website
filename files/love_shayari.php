@@ -83,7 +83,7 @@ $count=mysqli_num_rows($result);
 $per_page=8;
 $pages=ceil($count/$per_page);
 $offset=($page_no-1)*$per_page;
-$sql="SELECT discription,category  FROM shayari
+$sql="SELECT * FROM shayari
 WHERE category = 'love' LIMIT $offset,$per_page";
 $result=mysqli_query($con,$sql);
 mysqli_set_charset($con,'utf8');
@@ -99,34 +99,7 @@ else{
 }
 
 
-while($row=mysqli_fetch_assoc($result)){
-
-    $title=$row['discription'];
-    $discription=$row['discription'];
-    $str = mb_substr($title, 0, 26,'utf-8');
-    $category=$row['category'];
-
-    
-
-    echo'  <div class="posts ">
-                    <h2>'.$str.' ...</h2>
-                    <p>'.$discription.'</p> 
-
-                    <p class="post-meta" ><h>'. $category.'</h</p>
-	
-                   <br />
-                    <hr>
-                
-
-                </div>';
-
-            
-}
-
-
-
-
-
+include "./shayari_row.php";
 
 
 ?>  
