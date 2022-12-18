@@ -1,7 +1,7 @@
 <?php
 while($row=mysqli_fetch_assoc($result)){
 
-
+    $sno=$row['sno'];
     $title=$row['discription'];
     $discription=$row['discription'];
     $str = mb_substr($title, 0, 25,'utf-8');
@@ -20,9 +20,10 @@ while($row=mysqli_fetch_assoc($result)){
     echo '<p><img src="'.$images.'" alt="Abhi Aaye Abhi Baithe - True Love Shayari" width="640" height="480" /></p>';
             }
     
-            echo '<p class="post-meta" ><h>'. $category.'</h</p>
+            echo '<p class="post-meta" ><h>'. $category .'</h</p>
     
             <br />
+            <p class="post-meta" ><h>'. $sno .'</h</p>
              <hr>
          
     
