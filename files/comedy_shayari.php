@@ -1,12 +1,12 @@
 <!DOCTYPE html>
 <html lang="en-IN">
 <head>
-<?php include "./header.html" ?> 
+<?php include "personal_files/header.html" ?> 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
 <meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
-<link rel="stylesheet" href="website.css">
+<link rel="stylesheet" href="personal_files/website.css">
 <title>Latest Comedy Shayari | Best Funny Status | Funny Shayari</title>
 
 <meta name="description" content="Read Here New  BestFunny Shayari in Hindi, Funny Jokes Shayari .."/>
@@ -39,7 +39,7 @@
    <!-- upper navbar -->
 
   
-   <?php include 'navbar.php'; ?>
+   <?php include 'personal_files/navbar.php'; ?>
 
 
         <div class="site-content clearfix">
@@ -62,7 +62,7 @@
                 <!-- post -->
 <?php
 
-require_once "dbhome.php";
+require_once "personal_files/dbhome.php";
 
 if(isset($_GET['page'])){
     $page_no=$_GET['page'];
@@ -96,7 +96,7 @@ else{
 }
 
 
-include "./shayari_row.php";
+include "personal_files/shayari_row.php";
 
 
 
@@ -192,7 +192,7 @@ $end=($page_no + 4);
 
 
               <!-- footer link -->
-              <?php include 'homefooter.php'; ?>
+              <?php include 'personal_files/homefooter.php'; ?>
 
 </div>
 

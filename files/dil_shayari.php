@@ -1,13 +1,13 @@
 <!DOCTYPE html>
 <html lang="en-IN">
 <head>
-<?php include "./header.html" ?> 
+<?php include "personal_files/header.html" ?> 
 <meta name="google-site-verification" content="K_9h4nIm1HVM2IMFM3KihWeLEym_D0RuGEL0OSAQoC0" />
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
 <meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
-<link rel="stylesheet" href="website.css">
+<link rel="stylesheet" href="personal_files/website.css">
 <title>New Dil Shayari Hindi | Dil Status in Hindi | Shayari about Heart</title>
 
 <meta name="description" content="Large Hub of Dil shayari, Dil status and Dil sms in Hindi, Dil Shayari, दिल शायरी, दिल शायरी हिन्दी में, Shayari on Dil ."/>
@@ -39,7 +39,7 @@
 <body>
 
    <!-- upper navbar -->
-   <?php include 'navbar.php'; ?>
+   <?php include 'personal_files/navbar.php'; ?>
 
 
 <div class="site-content clearfix">
@@ -62,7 +62,7 @@
         <!-- post -->
 <?php
 
-require_once "dbhome.php";
+require_once "personal_files/dbhome.php";
 
 if(isset($_GET['page'])){
 $page_no=$_GET['page'];
@@ -95,7 +95,7 @@ header("location:dil_shayari.php");
 }
 
 
-include "./shayari_row.php";
+include "personal_files/shayari_row.php";
 
 
 
@@ -190,7 +190,7 @@ echo '<span class="gap">&nbsp;&nbsp;</span>';
 
 
       <!-- footer link -->
-      <?php include 'homefooter.php'; ?>
+      <?php include 'personal_files/homefooter.php'; ?>
 
 </div>
 

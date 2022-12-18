@@ -2,12 +2,12 @@
 <html lang="en-IN">
 <head>
 
-<?php include "./header.html" ?>
+<?php include "personal_files/header.html" ?>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
 <meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
-<link rel="stylesheet" href="website.css">
+<link rel="stylesheet" href="personal_files/website.css">
 <title>Friendship Shayari ! Best friend Shayari Hindi ! Dosti Shayari ! ...</title>
 
 <meta name="description" content="Friendship Shayari In Hindi: फ्रेंडशिप शायरी, I hope you liked this Friendship Shayari collection ."/>
@@ -39,7 +39,7 @@
 <body>
 
    <!-- upper navbar -->
-   <?php include 'navbar.php'; ?>
+   <?php include 'personal_files/navbar.php'; ?>
 
 
 <div class="site-content clearfix">
@@ -62,7 +62,7 @@
         <!-- post -->
 <?php
 
-require_once "dbhome.php";
+require_once "personal_files/dbhome.php";
 
 if(isset($_GET['page'])){
 $page_no=$_GET['page'];
@@ -96,7 +96,7 @@ header("location:friendship_shayari.php");
 }
 
 
-include "./shayari_row.php";
+include "personal_files/shayari_row.php";
 
 
 
@@ -190,7 +190,7 @@ echo '<span class="gap">&nbsp;&nbsp;</span>';
 
 
       <!-- footer link -->
-      <?php include 'homefooter.php'; ?>
+      <?php include 'personal_files/homefooter.php'; ?>
 
 </div>
 

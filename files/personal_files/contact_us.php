@@ -1031,14 +1031,14 @@ if($count>=400){
 <body>
 
 
-    <?php include "navbar.php" ?>
+    <?php include "personal_files/navbar.php" ?>
 
     <div class="site-content clearfix">
         <div class="sc-main">
             <div class="bradcrum">
                 <ol>
                     <li><a href="index.php">Home</a></li>
-                    <li><a href="contact_us">Contact us</a></li>
+                    <li><a href="personal_files/contact_us">Contact us</a></li>
                 </ol>
             </div>
 
@@ -1094,7 +1094,7 @@ if($count>=400){
 
 
 
-        <?php include 'homefooter.php' ?>
+        <?php include 'personal_files/homefooter.php' ?>
 
     </div>
 
