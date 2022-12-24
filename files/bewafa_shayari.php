@@ -1,11 +1,11 @@
 <!DOCTYPE html>
 <html lang="en-IN">
 <head>
-<?php include "./header.html" ?> 
+<?php include "personal_files/header.html" ?> 
 <meta name="google-site-verification" content="K_9h4nIm1HVM2IMFM3KihWeLEym_D0RuGEL0OSAQoC0" />
 <meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
 <title>Best Dard Bewafa Shayari In Hindi 2022 | बेवफा शायरी</title>
-<link rel="stylesheet" href="website.css">
+<link rel="stylesheet" href="personal_files/website.css">
 <meta name="description" content="Very Sad Bewafa Shayari in Hindi | बेहतरीन बेवफा शायरी | Bewafa Shayari Hindi | Bewafai SMS in Hindi | जबरदस्त बेवफाई शायरी ."/>
 
 <meta name="keywords" content="bewafa shayari in hindi for girlfriend, bewafa shayari video, bewafa shayari photo download, bewafa shayari, bhojpuri, दिल तोड़ दिया तूने बेवफा शायरी"/>
@@ -41,7 +41,7 @@
 
    <!-- upper navbar -->
 
-   <?php include 'navbar.php'; ?>
+   <?php include 'personal_files/navbar.php'; ?>
 
 
         <div class="site-content clearfix">
@@ -64,7 +64,7 @@
                 <!-- post -->
 <?php
 
-require_once "dbhome.php";
+require_once "personal_files/dbhome.php";
 
 if(isset($_GET['page'])){
     $page_no=$_GET['page'];
@@ -97,32 +97,7 @@ else{
 }
 
 
-while($row=mysqli_fetch_assoc($result)){
-
-    $title=$row['discription'];
-    $discription=$row['discription'];
-    $str = mb_substr($title, 0, 26,'utf-8');
-    $category=$row['category'];
-
-    
-
-    echo'  <div class="posts ">
-                    <h2>'.$str.' ...</h2>
-                    <p>'.$discription.'</p> 
-
-                    <p class="post-meta" ><h>bewafa shayari</h</p>
-	
-                   <br />
-                    <hr>
-                
-
-                </div>';
-
-            
-}
-
-
-
+include "personal_files/shayari_row.php";
 
 
 
@@ -215,7 +190,7 @@ $end=($page_no + 4);
 
 
               <!-- footer link -->
-              <?php include 'homefooter.php'; ?>
+              <?php include 'personal_files/homefooter.php'; ?>
 
 </div>
 

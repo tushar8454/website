@@ -1,12 +1,12 @@
 <!DOCTYPE html>
 <html lang="en-IN">
 <head>
-<?php include "./header.html" ?> 
+<?php include "personal_files/header.html" ?> 
 <meta name="google-site-verification" content="K_9h4nIm1HVM2IMFM3KihWeLEym_D0RuGEL0OSAQoC0" />
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
-<link rel="stylesheet" href="website.css">
+<link rel="stylesheet" href="personal_files/website.css">
 <title>Attitude Shayari In Hindi 2022 | Best 100+ Attitude Shayari</title>
 
 <meta name="description" content=" Attitude Shayari (एटीट्यूड शायरी) और शेयर कीजिये Best Attitude Shayari in Hindi ,2 Line Attitude Shayari."/>
@@ -36,7 +36,7 @@
 
    <!-- upper navbar -->
 
-   <?php include 'navbar.php'; ?>
+   <?php include 'personal_files/navbar.php'; ?>
 
 
         <div class="site-content clearfix">
@@ -59,7 +59,7 @@
                 <!-- post -->
 <?php
 
-require_once "dbhome.php";
+require_once "personal_files/dbhome.php";
 
 if(isset($_GET['page'])){
     $page_no=$_GET['page'];
@@ -77,7 +77,7 @@ $count=mysqli_num_rows($result);
 $per_page=8;
 $pages=ceil($count/$per_page);
 $offset=($page_no-1)*$per_page;
-$sql="SELECT discription,category  FROM shayari
+$sql="SELECT * FROM shayari
 WHERE category = 'attitude shayari' LIMIT $offset,$per_page";
 $result=mysqli_query($con,$sql);
 mysqli_set_charset($con,'utf8');
@@ -93,32 +93,7 @@ else{
 }
 
 
-while($row=mysqli_fetch_assoc($result)){
-
-    $title=$row['discription'];
-    $discription=$row['discription'];
-    $str = mb_substr($title, 0, 23,'utf-8');
-    $category=$row['category'];
-
-    
-
-    echo'  <div class="posts ">
-                    <h2>'.$str.' ...</h2>
-                    <p>'.$discription.'</p> 
-
-                    <p class="post-meta" ><h>'. $category.'</h</p>
-	
-                   <br />
-                    <hr>
-                
-
-                </div>';
-
-            
-}
-
-
-
+include "personal_files/shayari_row.php";
 
 
 
@@ -211,7 +186,7 @@ $end=($page_no + 4);
 
 
               <!-- footer link -->
-              <?php include 'homefooter.php'; ?>
+              <?php include 'personal_files/homefooter.php'; ?>
 
 </div>
 

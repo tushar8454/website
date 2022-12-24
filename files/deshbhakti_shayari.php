@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en-IN">
 <head>
-<?php include "./header.html" ?> 
+<?php include "personal_files/header.html" ?> 
 <meta name="google-site-verification" content="K_9h4nIm1HVM2IMFM3KihWeLEym_D0RuGEL0OSAQoC0" />
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -9,7 +9,7 @@
 <meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
 
 <title>[50+] Desh Bhakti Shayari in Hindi (MAY 2022) | देशभक्ति शायरी | Latest Deshbhakti Shayari</title>
-<link rel="stylesheet" href="website.css">
+<link rel="stylesheet" href="personal_files/website.css">
 <meta name="description" content="esh bhakti shayari हमारे देश की Indian army ने बहुत से सफलतायो के द्वारा हमारे देश में लोगो में deshbhakti के प्रति एकजूट किया है इसलिए आज desh bhakti shayari."/>
 
 <meta name="keywords" content="शहीद देश भक्ति शायरी, देशभक्ति शायरी कविता ,जोश भर देने वाली,देशभक्ति शायरी ,देश भक्ति शायरी पाकिस्तान के खिलाफ, देश भक्ति शायरी हिंदी में लिखी हुई,new desh bhakti shayari"/>
@@ -35,7 +35,7 @@
 
    <!-- upper navbar -->
 
-   <?php include 'navbar.php'; ?>
+   <?php include 'personal_files/navbar.php'; ?>
 
 
         <div class="site-content clearfix">
@@ -58,7 +58,7 @@
                 <!-- post -->
 <?php
 
-require_once "dbhome.php";
+require_once "personal_files/dbhome.php";
 
 if(isset($_GET['page'])){
     $page_no=$_GET['page'];
@@ -76,7 +76,7 @@ $count=mysqli_num_rows($result);
 $per_page=8;
 $pages=ceil($count/$per_page);
 $offset=($page_no-1)*$per_page;
-$sql="SELECT discription,category  FROM shayari
+$sql="SELECT * FROM shayari
 WHERE category = 'deshbhakti shayari' LIMIT $offset,$per_page";
 $result=mysqli_query($con,$sql);
 mysqli_set_charset($con,'utf8');
@@ -91,36 +91,7 @@ else{
     header("location:deshbhakti_shayari.php");
 }
 
-
-while($row=mysqli_fetch_assoc($result)){
-
-    $title=$row['discription'];
-    $discription=$row['discription'];
-    $str = mb_substr($title, 0, 26,'utf-8');
-    $category=$row['category'];
-
-    
-
-    echo'  <div class="posts ">
-                    <h2>'.$str.' ...</h2>
-                    <p>'.$discription.'</p> 
-
-                    <p class="post-meta" ><h>'. $category.'</h</p>
-	
-                   <br />
-                    <hr>
-                
-
-                </div>';
-
-            
-}
-
-
-
-
-
-
+include "personal_files/shayari_row.php";
 
 ?>  
 
@@ -210,7 +181,7 @@ $end=($page_no + 4);
 
 
               <!-- footer link -->
-              <?php include 'homefooter.php'; ?>
+              <?php include 'personal_files/homefooter.php'; ?>
 
 </div>
 

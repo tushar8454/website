@@ -1,13 +1,13 @@
 <!DOCTYPE html>
 <html lang="en-IN">
 <head>
-<?php include "./header.html" ?> 
+<?php include "personal_files/header.html" ?> 
 <meta name="google-site-verification" content="K_9h4nIm1HVM2IMFM3KihWeLEym_D0RuGEL0OSAQoC0" />
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
 <meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
-<link rel="stylesheet" href="website.css">
+<link rel="stylesheet" href="personal_files/website.css">
 <title>Best ilzaam Shayari in Hindi | इल्जाम शायरी</title>
 
 <meta name="description" content="Ilzaam Shayari, Hindi, Famous, Latest, 2 Line, 4 Line Shayari."/>
@@ -38,7 +38,7 @@
 
    <!-- upper navbar -->
 
-   <?php include 'navbar.php'; ?>
+   <?php include 'personal_files/navbar.php'; ?>
 
 
         <div class="site-content clearfix">
@@ -61,7 +61,7 @@
                 <!-- post -->
 <?php
 
-require_once "dbhome.php";
+require_once "personal_files/dbhome.php";
 
 if(isset($_GET['page'])){
     $page_no=$_GET['page'];
@@ -94,32 +94,7 @@ else{
 }
 
 
-while($row=mysqli_fetch_assoc($result)){
-
-    $title=$row['discription'];
-    $discription=$row['discription'];
-    $str = mb_substr($title, 0, 26,'utf-8');
-    $category=$row['category'];
-
-    
-
-    echo'  <div class="posts ">
-                    <h2>'.$str.' ...</h2>
-                    <p>'.$discription.'</p> 
-
-                    <p class="post-meta" ><h>ilzam shayari</h</p>
-	
-                   <br />
-                    <hr>
-                
-
-                </div>';
-
-            
-}
-
-
-
+include "personal_files/shayari_row.php";
 
 
 
@@ -212,7 +187,7 @@ $end=($page_no + 4);
 
 
               <!-- footer link -->
-              <?php include 'homefooter.php'; ?>
+              <?php include 'personal_files/homefooter.php'; ?>
 
 </div>
 

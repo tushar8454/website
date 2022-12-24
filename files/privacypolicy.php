@@ -8,7 +8,7 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
 <title>Privacy Policy - Shayariindustry.com</title>
-<?php include "./header.html" ?>
+<?php include "personal_files/header.html" ?>
 <meta name="description" content="Read about here a brief overview Privacy Policy our website."/>
 
 <link href="https://fonts.googleapis.com/css2?family=Hind&display=swap" rel="stylesheet">
@@ -930,7 +930,7 @@
 
    <!-- upper navbar -->
 
-   <?php include 'navbar.php'; ?>
+   <?php include 'personal_files/navbar.php'; ?>
 
 
 
@@ -951,7 +951,6 @@
                     
 <p>Last updated: May 13, 2022</p>
 <p>This Privacy Policy describes Our policies and procedures on the collection, use and disclosure of Your information when You use the Service and tells You about Your privacy rights and how the law protects You.</p>
-<p>We use Your Personal data to provide and improve the Service. By using the Service, You agree to the collection and use of information in accordance with this Privacy Policy. This Privacy Policy has been created with the help of the <a href="https://www.freeprivacypolicy.com/free-privacy-policy-generator/" target="_blank">Privacy Policy Generator</a>.</p>
 <h1>Interpretation and Definitions</h1>
 <h2>Interpretation</h2>
 <p>The words of which the initial letter is capitalized have meanings defined under the following conditions. The following definitions shall have the same meaning regardless of whether they appear in singular or in plural.</p>
@@ -1145,7 +1144,7 @@
 
 
               <!-- footer link -->
-              <?php include 'homefooter.php'; ?>
+              <?php include 'personal_files/homefooter.php'; ?>
 
 </div>
 

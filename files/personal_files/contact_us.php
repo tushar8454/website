@@ -51,7 +51,7 @@ $rowcount=mysqli_query($con,$rows);
 $count=mysqli_num_rows($rowcount);
 // echo $count;
 
-if($count==500){
+if($count>=400){
   
     $deletequery="DELETE FROM `contact_us` WHERE 500";
     $delete=mysqli_query($con,$deletequery);
@@ -1031,14 +1031,14 @@ if($count==500){
 <body>
 
 
-    <?php include "navbar.php" ?>
+    <?php include "personal_files/navbar.php" ?>
 
     <div class="site-content clearfix">
         <div class="sc-main">
             <div class="bradcrum">
                 <ol>
                     <li><a href="index.php">Home</a></li>
-                    <li><a href="contact_us">Contact us</a></li>
+                    <li><a href="personal_files/contact_us">Contact us</a></li>
                 </ol>
             </div>
 
@@ -1094,7 +1094,7 @@ if($count==500){
 
 
 
-        <?php include 'homefooter.php' ?>
+        <?php include 'personal_files/homefooter.php' ?>
 
     </div>
 
