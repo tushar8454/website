@@ -928,7 +928,7 @@
 
    <!-- upper navbar -->
 
-   <?php include 'personal_files/navbar.php'; ?>
+   <?php include "personal_files/navbar.php"; ?>
 
 
 
@@ -964,7 +964,7 @@
 
 
               <!-- footer link -->
-              <?php include 'personal_files/homefooter.php'; ?>
+              <?php include "personal_files/homefooter.php"; ?>
 
 </div>
 
