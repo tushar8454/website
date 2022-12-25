@@ -6,7 +6,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
-<link rel="stylesheet" href="personal_files/website.css">
+
 <title>Alone Shayari, Shayari on Loneliness | Tanhai Shayari</title>
 
 <meta name="description" content=" Alone Shayari in Hindi & English | Read तन्हा शायरी | Hindi Shayari.  2022 by shayari."/>
@@ -28,7 +28,7 @@
 
 
 
-
+<?php include "personal_files/website_css.html"; ?>
 
 
 </head>

@@ -6,7 +6,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
-<link rel="stylesheet" href="personal_files/website.css">
+
 <title>Attitude Shayari In Hindi 2022 | Best 100+ Attitude Shayari</title>
 
 <meta name="description" content=" Attitude Shayari (एटीट्यूड शायरी) और शेयर कीजिये Best Attitude Shayari in Hindi ,2 Line Attitude Shayari."/>
@@ -19,9 +19,11 @@
 <meta property="og:site_name" content="Shayariindustry"/>
 <meta property="og:description" content="Best Love Shayari in Hindi, True Love Status with image, Top Love Sms For Girlfriend, Boyfriend, Wife, Husband, Hindi Love Shayari For Lovers." />
 <meta property="og:title" content="Latest Love Shayari in Hindi, True Love Status, Best Love Sms"/>
+
 <meta property="og:image" content="https://www.shayariindustry.com/shayariindustry.jpg" />
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Hind" >
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+<?php include "personal_files/website_css.html"; ?>
 <script> function shownav(x){ var a=document.getElementById("mainnav"); "menu"===a.className?a.className+=" resp":a.className="menu"; x.classList.toggle("change"); } </script>
 
 

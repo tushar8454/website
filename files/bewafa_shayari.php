@@ -4,8 +4,9 @@
 
 <meta name="google-site-verification" content="K_9h4nIm1HVM2IMFM3KihWeLEym_D0RuGEL0OSAQoC0" />
 <meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
+
 <title>Best Dard Bewafa Shayari In Hindi 2022 | बेवफा शायरी</title>
-<link rel="stylesheet" href="personal_files/website.css">
+
 <meta name="description" content="Very Sad Bewafa Shayari in Hindi | बेहतरीन बेवफा शायरी | Bewafa Shayari Hindi | Bewafai SMS in Hindi | जबरदस्त बेवफाई शायरी ."/>
 
 <meta name="keywords" content="bewafa shayari in hindi for girlfriend, bewafa shayari video, bewafa shayari photo download, bewafa shayari, bhojpuri, दिल तोड़ दिया तूने बेवफा शायरी"/>
@@ -27,6 +28,7 @@
 
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Hind" >
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+<?php include "personal_files/website_css.html"; ?>
 <script> function shownav(x){ var a=document.getElementById("mainnav"); "menu"===a.className?a.className+=" resp":a.className="menu"; x.classList.toggle("change"); } </script>
 
 

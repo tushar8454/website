@@ -9,7 +9,7 @@
 <meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
 
 <title>[50+] Desh Bhakti Shayari in Hindi (MAY 2022) | देशभक्ति शायरी | Latest Deshbhakti Shayari</title>
-<link rel="stylesheet" href="personal_files/website.css">
+
 <meta name="description" content="esh bhakti shayari हमारे देश की Indian army ने बहुत से सफलतायो के द्वारा हमारे देश में लोगो में deshbhakti के प्रति एकजूट किया है इसलिए आज desh bhakti shayari."/>
 
 <meta name="keywords" content="शहीद देश भक्ति शायरी, देशभक्ति शायरी कविता ,जोश भर देने वाली,देशभक्ति शायरी ,देश भक्ति शायरी पाकिस्तान के खिलाफ, देश भक्ति शायरी हिंदी में लिखी हुई,new desh bhakti shayari"/>
@@ -22,7 +22,9 @@
 <meta property="og:title" content="Latest Love Shayari in Hindi, True Love Status, Best Love Sms"/>
 <meta property="og:image" content="https://www.shayariindustry.com/uploads/shayariindustry.jpg" />
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Hind" >
+<?php include "personal_files/website_css.html"; ?>
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+
 <script> function shownav(x){ var a=document.getElementById("mainnav"); "menu"===a.className?a.className+=" resp":a.className="menu"; x.classList.toggle("change"); } </script>
 
 
