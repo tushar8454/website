@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en-IN">
 <head>
-<?php include "personal_files/header.html"; ?> 
+
 <meta name="google-site-verification" content="K_9h4nIm1HVM2IMFM3KihWeLEym_D0RuGEL0OSAQoC0" />
 <meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
 <title>Best Dard Bewafa Shayari In Hindi 2022 | बेवफा शायरी</title>
@@ -172,6 +172,6 @@ include "personal_files/shayari_row.php";
 
 
 </body>
-
+<?php include "personal_files/header.html"; ?> 
 </html>
 

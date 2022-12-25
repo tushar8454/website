@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en-IN">
 <head>
-<?php include "personal_files/header.html" ?> 
+
     <link rel="stylesheet" href="personal_files/website.css">
 <meta name="google-site-verification" content="K_9h4nIm1HVM2IMFM3KihWeLEym_D0RuGEL0OSAQoC0" />
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -207,5 +207,5 @@ $end=($page_no + 4);
 
 
 </body>
-
+<?php include "personal_files/header.html"; ?> 
 </html>

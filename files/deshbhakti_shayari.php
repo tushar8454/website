@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en-IN">
 <head>
-<?php include "personal_files/header.html"; ?> 
+ 
 <meta name="google-site-verification" content="K_9h4nIm1HVM2IMFM3KihWeLEym_D0RuGEL0OSAQoC0" />
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -167,6 +167,6 @@ include "personal_files/shayari_row.php";
 
 
 </body>
-
+<?php include "personal_files/header.html"; ?> 
 </html>
 
