@@ -87,36 +87,7 @@ if($count>=400){
     }
     </script>
 
-    <style>
-    .option {
-        text-align: center;
-    }
-
-    .new-button {
-        padding: 15px 25px;
-        font-size: 18px;
-        text-align: center;
-        cursor: pointer;
-        outline: none;
-        color: #fff;
-        background-color: #333;
-        border: none;
-        border-radius: 10px;
-        box-shadow: 0 5px #999;
-
-    }
-
-    .new-button:hover {
-        background: #f90;
-        color: #fff;
-    }
-
-    .new-button:active {
-        background-color: #f90;
-        box-shadow: 0 5px #666;
-        transform: translateY(4px);
-    }
-    </style>
+    
     <style>
     html {
         font-family: Hind, sans-serif;

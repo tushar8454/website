@@ -8,7 +8,7 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
 <title>Privacy Policy - Shayariindustry.com</title>
-<?php include "personal_files/header.html" ?>
+
 <meta name="description" content="Read about here a brief overview Privacy Policy our website."/>
 
 <link href="https://fonts.googleapis.com/css2?family=Hind&display=swap" rel="stylesheet">
@@ -1156,6 +1156,6 @@
 
 
 </body>
-
+<?php include "personal_files/header.html"; ?> 
 </html>
 

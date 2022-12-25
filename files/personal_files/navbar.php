@@ -15,16 +15,7 @@
 
 
 
-<div class="site-header clearfix">
-    <!-- <div class="option" style="width:100%">
-                <button class="new-button" style='margin:16px'>Shayari</button> 
-                <button class="new-button" style='margin:16px'>Quotes</button>
-                </div> -->
-                <!-- style='margin-left:80px'
-                style='margin:16px' -->
-                
-    <!--<div class="ads ad-topbanner"></div>-->
-</div>
+
 <nav class="site-nav" id="site-nav">
     <a href="javascript:void(0);" class="show-nav" onclick="shownav(this)">
         <div class="bar1"></div>

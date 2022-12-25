@@ -1,11 +1,11 @@
 <!DOCTYPE html>
 <html lang="en-IN">
 <head>
-<?php include "personal_files/header.html"; ?> 
+ 
 <meta name="google-site-verification" content="K_9h4nIm1HVM2IMFM3KihWeLEym_D0RuGEL0OSAQoC0" />
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="personal_files/website.css">
+
 <meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
 
 <title>Dil Tootne Ki Shayari | 50+ ब्रोकन हार्ट शायरी ...</title>
@@ -29,7 +29,7 @@
 <meta property="og:image" content="https://www.shayariindustry.com/shayariindustry.jpg" />
 
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Hind" >
-
+<?php include "personal_files/website_css.html"; ?>
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
 <script> function shownav(x){ var a=document.getElementById("mainnav"); "menu"===a.className?a.className+=" resp":a.className="menu"; x.classList.toggle("change"); } </script>
 
@@ -176,5 +176,5 @@ include "personal_files/shayari_row.php";
 
 
 </body>
-
+<?php include "personal_files/header.html"; ?> 
 </html>
