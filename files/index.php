@@ -1,18 +1,14 @@
-<?php
-
-require_once "personal_files/dbhome.php";
-?>
 <!DOCTYPE html>
 <html lang="en-IN">
 
 <head>
-<?php include "personal_files//header.html" ?> 
-<link rel="stylesheet" href="personal_files/website.css">
+    <?php include "personal_files/header.html" ?>
+    <link rel="stylesheet" href="personal_files/website.css">
 
-<meta name="google-site-verification" content="K_9h4nIm1HVM2IMFM3KihWeLEym_D0RuGEL0OSAQoC0" />
+    <meta name="google-site-verification" content="K_9h4nIm1HVM2IMFM3KihWeLEym_D0RuGEL0OSAQoC0" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel ="icon" href="shayariindustry.jpg" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="icon" href="shayariindustry.jpg" type="image/x-icon">
     <meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
     <title>Latest Hindi Shayari & Ghazal, True Love Shayari, Best Shayari in Hindi</title>
     <meta name="description"
@@ -45,40 +41,44 @@ require_once "personal_files/dbhome.php";
         x.classList.toggle("change");
     }
     </script>
-   
-    
-   
+
+
+
 </head>
 
 <body>
 
-   <!-- upper navbar -->
+    <!-- upper navbar -->
 
-   <?php include 'personal_files/navbar.php'; ?>
+    <?php include 'personal_files/navbar.php'; ?>
 
 
 
-        
-<div class="site-content clearfix">
-    <div class="sc-main">
-        <div class="bradcrum">
-            <ol>
-                <li><a href="https://shayariindustry.com/index.php">Home</a></li>
-                
-            </ol>
-        </div>
-        <div class="posts">
-            <h1>Best  Shayari</h1>
-            <div class="">
-               
+
+    <div class="site-content clearfix">
+        <div class="sc-main">
+            <div class="bradcrum">
+                <ol>
+                    <li><a href="https://shayariindustry.com/index.php">Home</a></li>
+
+                </ol>
             </div>
-            <p>Welcome to Shayari Industry(shayariindustry.com) . Sometimes poetry(shayari)is the best companion and it can heal every wound .This is the perfect place for every emotion a human can have . Here, you'll get every type of shayari  sad,happy ,alone ,long shayari and short shayari ,etc . So ,why wait go and click on the category on the basis of your feeling and emotion .We hope you like our content . Suggestions are always open ,you can mail us .Thank you ❤️❤️
-            </p>
-        </div>
+            <div class="posts">
+                <h1>Best Shayari</h1>
+                <div class="">
 
+                </div>
+                <p>Welcome to Shayari Industry(shayariindustry.com) . Sometimes poetry(shayari)is the best companion and
+                    it can heal every wound .This is the perfect place for every emotion a human can have . Here, you'll
+                    get every type of shayari sad,happy ,alone ,long shayari and short shayari ,etc . So ,why wait go
+                    and click on the category on the basis of your feeling and emotion .We hope you like our content .
+                    Suggestions are always open ,you can mail us .Thank you ❤️❤️
+                </p>
+            </div>
 
-        <!-- post -->
-<?php
+            
+            <!-- post -->
+            <?php
 
 require_once "personal_files/dbhome.php";
 
@@ -119,14 +119,14 @@ include "personal_files/shayari_row.php";
 
 
 
-?>  
+?>
 
 
 
 
-        <div class="pagination clearfix">
+            <div class="pagination clearfix">
 
-   <?php
+                <?php
 
 $start=($page_no-4);
 switch($start){
@@ -194,15 +194,15 @@ echo '<span class="gap">&nbsp;&nbsp;</span>';
 
 
 ?>
+            </div>
         </div>
+
+
+
+        <!-- footer link -->
+        <?php include 'personal_files/homefooter.php'; ?>
+
     </div>
-
-
-
-      <!-- footer link -->
-      <?php include 'personal_files/homefooter.php'; ?>
-
-</div>
 
 
 
